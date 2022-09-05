@@ -1,0 +1,127 @@
+body{
+  background:url(/src/img/anhdep.jpg);
+  background-size: 100%;
+}
+h1{
+  text-align: center;
+  padding-top: 100px;
+  margin: 0;
+  font: 4em sans-serif;
+  color: red;
+}
+.todoapp {
+    width: 500px;
+    background: #fff;
+    margin: 50px auto;
+    position: relative;
+    border-radius: 15px;
+    border: 2px solid rgb(31, 27, 27);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .header{
+    border-bottom: 1px solid #999;
+  }
+
+  .header input {
+    margin-right: 10px;
+    border: none;
+    width: 100%;
+    font-size: 24px;
+    padding: 10px 0;
+    background-color: transparent;
+  }
+  
+  .content input {
+      padding: 16px 16px 16px 60px;
+      border: none;
+      background: rgba(0, 0, 0, 0.003);
+      position: relative;
+      margin: 0;
+      width: 100%;
+      font-size: 24px;
+      font-family: inherit;
+      font-weight: inherit;
+      line-height: 1.4em;
+      border: 0;
+      color: inherit;
+      padding: 6px;
+      border: 1px solid #999;
+      box-sizing: border-box;
+      
+  }
+  .todoapp input:focus{
+      outline: none;
+  }
+  .header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      box-sizing: border-box;
+  }
+  .activeAll {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+  }
+  .activeAll:active {
+    transform: rotate(180deg);
+  }
+  .content .todo-item{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid #999;
+  }
+  .content .todo-item:hover .del-item {
+    display: block;
+  }
+  
+  .content .todo-item p {
+    margin: 0  40px 0 5px;
+    flex: 1;
+    text-align: center;
+    font-size: 1.2em;
+    overflow-x: hidden;
+  }
+
+  .check-active {
+    width: 12px;
+    height: 12px;
+    padding-left: 10px;
+  }
+  .del-item {
+    width: 12px;
+    height: 12px;
+    padding-right: 10px;
+    display: none;
+    float: right;
+  }
+  .title {
+    font-weight: bold;
+  }
+  .titleActive {
+    color: #999;
+    text-decoration: line-through;
+  }
+  
+  .footer {
+    box-sizing: border-box;
+    padding:  5px 0;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .showActive {
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+  .button {
+    border: none;
+    background-color: #fff;
+  }
+  
